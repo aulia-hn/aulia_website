@@ -1,0 +1,36 @@
+/* Project Card Component Styles */
+.project-card {
+  @apply group relative overflow-hidden rounded-lg transform transition-all duration-500 hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 focus:ring-offset-black;
+}
+
+.project-image-container {
+  @apply aspect-square overflow-hidden;
+}
+
+.project-image {
+  @apply w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale-hover;
+}
+
+.project-overlay {
+  @apply absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-70 group-hover:opacity-90 transition-opacity duration-500;
+}
+
+.project-info {
+  @apply absolute bottom-0 left-0 right-0 p-4 text-white transform transition-transform duration-500 group-hover:translate-y-0;
+}
+
+.project-title {
+  @apply text-xl font-bold mb-1 group-hover:text-red-500 transition-colors;
+}
+
+.project-meta {
+  @apply text-sm text-gray-300;
+}
+
+.play-button-container {
+  @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-all duration-500 scale-50 group-hover:scale-100;
+}
+
+.play-button {
+  @apply bg-red-600 rounded-full p-3 shadow-lg;
+}

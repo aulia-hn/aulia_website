@@ -1,0 +1,60 @@
+/* Header Component Styles */
+.header {
+  @apply fixed top-0 left-0 right-0 z-50 transition-all duration-300;
+}
+
+.header-scrolled {
+  @apply bg-white/95 backdrop-blur-sm py-4 shadow-lg;
+}
+
+.header-transparent {
+  @apply bg-transparent py-6;
+}
+
+.header-container {
+  @apply container mx-auto px-4 md:px-6;
+}
+
+.header-content {
+  @apply flex justify-between items-center;
+}
+
+.logo-link {
+  @apply flex items-center space-x-2 text-black group;
+}
+
+.logo-icon {
+  @apply h-8 w-8 transition-transform duration-500 group-hover:rotate-12;
+}
+
+.logo-text {
+  @apply text-xl font-bold;
+}
+
+.desktop-nav {
+  @apply hidden md:flex space-x-8;
+}
+
+.nav-link {
+  @apply text-sm font-medium transition-colors hover:text-red-500;
+}
+
+.nav-link-active {
+  @apply text-red-500;
+}
+
+.mobile-menu-button {
+  @apply md:hidden text-black p-2 focus:outline-none;
+}
+
+.mobile-nav {
+  @apply md:hidden absolute top-full left-0 right-0 bg-white/95 backdrop-blur-sm shadow-lg;
+}
+
+.mobile-nav-list {
+  @apply flex flex-col py-4;
+}
+
+.mobile-nav-link {
+  @apply px-6 py-3 text-sm font-medium transition-colors hover:bg-gray-50;
+}

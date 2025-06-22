@@ -1,0 +1,44 @@
+/* Project Detail Page Styles */
+.project-detail {
+  @apply py-6;
+}
+
+.back-link {
+  @apply inline-flex items-center text-indigo-400 hover:text-indigo-300 mb-6 transition-colors;
+}
+
+.project-content {
+  @apply relative;
+}
+
+.project-cover {
+  @apply w-full aspect-square object-cover rounded-lg shadow-2xl animate-scaleIn;
+}
+
+.project-info {
+  @apply mt-8 space-y-6 animate-slideUp;
+}
+
+.project-title {
+  @apply text-3xl font-bold;
+}
+
+.project-meta {
+  @apply text-gray-400 mt-2;
+}
+
+.track-list {
+  @apply space-y-2;
+}
+
+.track-button {
+  @apply w-full text-left p-4 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all duration-300 transform hover:scale-[1.02] flex justify-between items-center animate-slideUp;
+}
+
+.track-title {
+  @apply text-black;
+}
+
+.track-duration {
+  @apply text-gray-400 text-sm;
+}

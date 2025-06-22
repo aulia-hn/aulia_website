@@ -1,0 +1,24 @@
+/* Home Page Styles */
+.hero-title {
+  @apply text-6xl md:text-8xl font-bold text-center mb-20 bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-red-800;
+}
+
+.section {
+  @apply mb-20;
+}
+
+.section-header {
+  @apply flex items-center mb-10;
+}
+
+.section-icon {
+  @apply h-6 w-6 text-red-500 mr-3;
+}
+
+.section-title {
+  @apply text-2xl md:text-3xl font-bold text-black;
+}
+
+.projects-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-6;
+}

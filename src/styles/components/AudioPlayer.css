@@ -1,0 +1,64 @@
+/* Audio Player Component Styles */
+.audio-player {
+  @apply w-full bg-white text-black p-4 rounded-lg shadow-lg;
+}
+
+.audio-player-title {
+  @apply mb-4 text-center;
+}
+
+.audio-player-title h3 {
+  @apply text-lg font-medium;
+}
+
+.progress-bar {
+  @apply h-2 bg-gray-200 rounded-full cursor-pointer;
+}
+
+.progress-bar-fill {
+  @apply h-full bg-red-600 rounded-full transition-all duration-100;
+}
+
+.time-display {
+  @apply flex justify-between text-xs mt-1 text-gray-600;
+}
+
+.controls {
+  @apply flex justify-center items-center space-x-6;
+}
+
+.control-button {
+  @apply p-2 rounded-full hover:bg-gray-100 transition-colors focus:outline-none;
+}
+
+.play-button {
+  @apply p-3 bg-red-600 rounded-full hover:bg-red-700 transition-colors focus:outline-none text-white;
+}
+
+.tracklist {
+  @apply mt-6;
+}
+
+.tracklist-title {
+  @apply text-sm font-medium mb-2 text-gray-600;
+}
+
+.tracklist-container {
+  @apply space-y-1 max-h-48 overflow-y-auto custom-scrollbar;
+}
+
+.track-item {
+  @apply flex justify-between p-2 rounded cursor-pointer hover:bg-gray-100 transition-colors;
+}
+
+.track-item.active {
+  @apply bg-gray-100 text-red-600;
+}
+
+.track-title {
+  @apply text-sm;
+}
+
+.track-duration {
+  @apply text-xs text-gray-500;
+}

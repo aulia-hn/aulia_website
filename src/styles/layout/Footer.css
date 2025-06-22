@@ -1,0 +1,36 @@
+/* Footer Component Styles */
+.footer {
+  @apply bg-white py-8 text-gray-600 border-t;
+}
+
+.footer-container {
+  @apply container mx-auto px-4 md:px-6;
+}
+
+.footer-content {
+  @apply flex flex-col items-center;
+}
+
+.footer-logo {
+  @apply flex items-center mb-6;
+}
+
+.footer-logo-icon {
+  @apply h-6 w-6 mr-2 text-red-500;
+}
+
+.footer-logo-text {
+  @apply text-lg font-bold text-black;
+}
+
+.social-links {
+  @apply flex space-x-6 mb-6;
+}
+
+.social-link {
+  @apply hover:text-red-500 transition-colors p-2 rounded-full hover:bg-gray-50;
+}
+
+.copyright {
+  @apply text-sm text-center;
+}
