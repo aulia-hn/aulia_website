@@ -301,7 +301,7 @@ Faire changer les choses ma gueule bien sûr qu'j'ai ce pouvoir
       },
       {
         id: '1-5',
-        title: '20h07',
+        title: '20h07 (feat. Amé)',
         duration: '3:58',
         audioUrl: 'https://storage.googleapis.com/media-session/sintel/snow-fight.mp3',
         lyrics: `
@@ -671,7 +671,6 @@ J'suis déjà loin
 loin du boucan les voix se mêlent au silence
 J'suis loin, bien loin de mes confidents
 
-
 Mais j'dois laisser derrière moi ce qui est derrière moi
 Mais j'veux les enlacer, les embrasser pour une dernière fois 
 C'est pas la même manière, mais c'est l'même choix
@@ -1000,7 +999,7 @@ Bienvenue dans ma perception
       },
       {
         id: '3-2',
-        title: 'Le feu et le sang',
+        title: 'Le feu et le sang (feat. Amé)',
         duration: '2:33',
         audioUrl: '/public/ressources/music/Hantu_Kamar/2.le_feu_et_le_sang.wav',
         lyrics: `
@@ -1344,7 +1343,7 @@ Que vais-je devenir?
       },
       {
          id: '3-7',
-        title: 'Sommeil',
+        title: 'Sommeil (feat. Cupid)',
         duration: '2:25',
         audioUrl: '/public/ressources/music/Hantu_Kamar/7.sommeil.wav',
         lyrics: `
@@ -1506,7 +1505,7 @@ Non c’est pas fini
   {
     id: '5',
     title: '03_nov_24',
-    titleImageUrl: 'à faire',
+    titleImageUrl: '/public/ressources/image/03_nov.png',
     releaseDate: '2023-09-12',
     coverUrl: '/public/ressources/cover/pochette_3_nov_24.jpg',
     type: 'single',
@@ -1533,10 +1532,10 @@ Non c’est pas fini
 },
     tracks: [
       {
-        id: '4-1',
+        id: '5-1',
         title: '03_NOV_24',
         duration: '4:17',
-        audioUrl: '/public/ressources/music/single/3_Nov_24.mp3',
+        audioUrl: '/public/ressources/music/Single/3_Nov_24.mp3',
         lyrics: `
 Hun hun chaque jour est le même 
 Hun hun j'dois trouvez ce pez
@@ -1687,22 +1686,83 @@ Et une fois Au stud j'veux faire un somme
 
 export const clips: Clip[] = [
   {
-    id: 'clip1',
+    id: '1',
     title: 'Hauru',
+    titleImageUrl: '/public/ressources/image/hauru.png',
     thumbnailUrl: '/public/ressources/image/hauru_screen.png',
-    videoUrl: 'https://youtu.be/-6FZR0J6hYU',
+    videoUrl: 'https://youtu.be/lmqYHcqF-FU?si=vqWCWdHmwumkKlkB',
     releaseDate: '2024-03-15',
-    lyrics: `Verse 1:
-City lights shine bright tonight
-Guiding me through endless streets
-Every corner holds a story
-Every moment feels complete
+    lyrics: `
+Chaque jour est différent, j'suis dans l'bon train 
+J'suis dans la musique qui s'fait sans contraintes 
+Pari sur moi c'est du trente contre un
+J'suis un branleur qui s'prend en main
 
-Chorus:
-In the city's warm embrace
-Finding magic in this place
-Neon signs and starlit skies
-Paint a picture of our lives`,
+J’suis jeune et intestable, pas très stable
+La money et oim sur la kisscam
+Mais j'ai trop d'empathie pour les p'tits scams
+Et j'ai bien trop d'love pour un disstrack
+
+Hyperactif j'évite le sucre
+Et j'perds le nord donc je vise le sud
+J'fais un couplet d'batard et puis j'le suppr’
+Il pleut pas jaune gros j'vous pisse dessus
+
+Une grosse layette à ces enculés sur un piédestal
+C'est la compèt du plus détestable 
+J'veux voir du blanc et du bleu quand les caisses crames
+
+Il fait froid froid dans la ville
+Froid froid même les beau jours
+J'garde le même coeur qu'Hauru
+
+Ah il fait froid froid dans la ville
+Froid qu'importe l'horaire 
+J'abrite Calcifer sous la polaire
+
+Il fait froid froid dans la ville
+Froid froid même les beau jours
+J'garde le même coeur qu'Hauru
+
+Il fait froid froid dans la ville
+Froid qu'importe l'horaire 
+J'abrite calcifer sous la polaire
+
+J'me suis fait tout frais, je me sens pas beau
+J'suis entre le clou et le marteau 
+J'suis entre la planche et le couperet
+
+Mais dès que je le peux, j't'emmenerai la haut
+Apprécier la verdure, observer les oiseaux 
+Mais continuer d'emmerder les fachos
+
+Han, le projet est naïf à souhait je m'en fous
+J'ai besoin d'ça, je me tue assez dans c'trou
+Devinez pourquoi
+Je ne suis pas l'même devant vous
+
+J'le redis j'aime pas vos regard d'escrocs 
+J'en ai pas fini un j'suis sur 4 jet-pro
+J'pourrai être le prince de ma ville
+Ou être celui qui retarde le metro
+
+Lessgo
+
+Il fait froid froid dans la ville
+Froid froid même les beau jours 
+J'garde le même coeur qu'Hauru 
+
+Fait froid froid dans la ville
+Froid qu'importe l'horaire 
+J'abrite Calcifer sous la polaire 
+
+Il fait froid froid dans la ville
+Froid froid même les beau jours
+J'garde le même coeur qu'Hauru
+
+Ici Toute l'année c'est hiver
+Un jour Il faudrait s'y faire
+Ouhoho`,
   },
 ];
 
@@ -1750,7 +1810,7 @@ export const playlists: Playlist[] = [
     },
   },
   {
-  id: 'pl3',
+  id: 'pl4',
     title: 'C(pas encore)7MERD',
     coverUrl: 'public/ressources/cover/pochette_beau.jpg',
     description: 'morceaux pas finis et maquettes nulles',

@@ -2,9 +2,9 @@ import React from 'react';
 
 const Footer: React.FC = () => {
   const socialLinks = [
-    { text: 'instagram', url: 'https://instagram.com' },
-    { text: 'soundcloud', url: 'https://soundcloud.com' },
-    { text: 'youtube', url: 'https://youtube.com' },
+    { name: 'instagram', url: 'https://www.instagram.com/aulia._hn/?hl=fr', icon: '/public/ressources/image/logo/instagram.svg' },
+    { name: 'soundcloud', url: 'https://soundcloud.com/aulia11', icon: '/public/ressources/image/logo/soundcloud_bw.svg' },
+    { name: 'youtube', url: 'https://www.youtube.com/@aulia_hn', icon: '/public/ressources/image/logo/youtube.svg' },
   ];
 
   return (
@@ -18,15 +18,15 @@ const Footer: React.FC = () => {
                 href={link.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline hover:text-red-500 transition-colors"
+                className="hover:opacity-75 transition-opacity"
               >
-                {link.text}
+                <img src={link.icon} alt={link.name} className="h-6 w-6" />
               </a>
             ))}
           </div>
           
           <div className="text-sm text-center">
-            <p>&copy; {new Date().getFullYear()} Artist Name. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Aulia. All rights reserved.</p>
           </div>
         </div>
       </div>

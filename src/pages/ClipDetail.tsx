@@ -1,12 +1,11 @@
 import React, { useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft } from 'lucide-react';
+import { useParams } from 'react-router-dom';
 import { getClipById } from '../data/music';
 
 const ClipDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const clip = getClipById(id || '');
-  
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -15,12 +14,6 @@ const ClipDetail: React.FC = () => {
     return (
       <div className="pt-6">
         <h1 className="text-2xl font-bold mb-4">Clip not found</h1>
-        <Link 
-          to="/" 
-          className="flex items-center text-red-500 hover:text-red-600"
-        >
-          <ArrowLeft size={18} className="mr-2" /> Back to home
-        </Link>
       </div>
     );
   }
@@ -30,16 +23,15 @@ const ClipDetail: React.FC = () => {
 
   return (
     <div className="py-6">
-      <Link 
-        to="/" 
-        className="inline-flex items-center text-red-500 hover:text-red-600 mb-6"
-      >
-        <ArrowLeft size={18} className="mr-2" /> Back to home
-      </Link>
-      
       <div className="space-y-8">
-        <h1 className="text-3xl font-bold">{clip.title}</h1>
-        
+        <div className="h-16 mb-4">
+          <img
+            src={clip.titleImageUrl} // Assumes clip object has a titleImageUrl
+            alt={clip.title}
+            className="h-full w-auto object-contain"
+          />
+        </div>
+
         <div className="relative pb-[56.25%] h-0">
           <iframe
             src={`https://www.youtube.com/embed/${videoId}`}
@@ -49,7 +41,7 @@ const ClipDetail: React.FC = () => {
             allowFullScreen
           ></iframe>
         </div>
-        
+
         <div className="mt-8">
           <h2 className="text-2xl font-bold mb-4">Lyrics</h2>
           <pre className="font-sans text-gray-700 whitespace-pre-wrap break-words leading-relaxed">

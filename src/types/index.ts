@@ -40,6 +40,7 @@ export interface Track {
 export interface Clip {
   id: string;
   title: string;
+  titleImageUrl: string;
   thumbnailUrl: string;
   videoUrl: string;
   releaseDate: string;

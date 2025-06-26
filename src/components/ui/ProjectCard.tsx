@@ -26,70 +26,35 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, type }) => {
             <p className="text-sm text-gray-600">{playlist.description}</p>
           </div>
 
-          <div className="space-y-2">
+          <div className="grid grid-cols-5 gap-3 place-items-center">
             {playlist.streamingLinks.soundcloud && (
-              <a
-                href={playlist.streamingLinks.soundcloud}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block text-center p-2 bg-[#ff5500] hover:bg-[#ff6600] text-white transition-all duration-300"
-              >
-                <span className="text-sm font-medium">Listen on SoundCloud</span>
+              <a href={playlist.streamingLinks.soundcloud} target="_blank" rel="noopener noreferrer">
+                <img src="/public/ressources/image/logo/soundcloud.svg" alt="SoundCloud" className="h-7 w-14" />
               </a>
             )}
-            
             {playlist.streamingLinks.spotify && (
-              <a
-                href={playlist.streamingLinks.spotify}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block text-center p-2 bg-[#1DB954] hover:bg-[#1ed760] text-white transition-all duration-300"
-              >
-                <span className="text-sm font-medium">Listen on Spotify</span>
+              <a href={playlist.streamingLinks.spotify} target="_blank" rel="noopener noreferrer">
+                <img src="/public/ressources/image/logo/spotify.svg" alt="Spotify" className="h-7 w-7" />
               </a>
             )}
-            
             {playlist.streamingLinks.appleMusic && (
-              <a
-                href={playlist.streamingLinks.appleMusic}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block text-center p-2 bg-[#FA243C] hover:bg-[#ff1222] text-white transition-all duration-300"
-              >
-                <span className="text-sm font-medium">Listen on Apple Music</span>
+              <a href={playlist.streamingLinks.appleMusic} target="_blank" rel="noopener noreferrer">
+                <img src="/public/ressources/image/logo/apple_music.svg" alt="Apple Music" className="h-7 w-14" />
               </a>
             )}
-            
             {playlist.streamingLinks.youtubeMusic && (
-              <a
-                href={playlist.streamingLinks.youtubeMusic}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block text-center p-2 bg-[#FF0000] hover:bg-[#ff1a1a] text-white transition-all duration-300"
-              >
-                <span className="text-sm font-medium">Listen on YouTube Music</span>
+              <a href={playlist.streamingLinks.youtubeMusic} target="_blank" rel="noopener noreferrer">
+                <img src="/public/ressources/image/logo/youtube_music.svg" alt="YouTube Music" className="h-7 w-7" />
               </a>
             )}
-            
             {playlist.streamingLinks.deezer && (
-              <a
-                href={playlist.streamingLinks.deezer}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block text-center p-2 bg-[#00C7F2] hover:bg-[#00d4ff] text-white transition-all duration-300"
-              >
-                <span className="text-sm font-medium">Listen on Deezer</span>
+              <a href={playlist.streamingLinks.deezer} target="_blank" rel="noopener noreferrer">
+                <img src="/public/ressources/image/logo/deezer.svg" alt="Deezer" className="h-7 w-14" />
               </a>
             )}
-            
             {playlist.streamingLinks.tidal && (
-              <a
-                href={playlist.streamingLinks.tidal}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block text-center p-2 bg-black hover:bg-gray-900 text-white transition-all duration-300"
-              >
-                <span className="text-sm font-medium">Listen on Tidal</span>
+              <a href={playlist.streamingLinks.tidal} target="_blank" rel="noopener noreferrer">
+                <img src="/public/ressources/image/logo/tidal.svg" alt="Tidal" className="h-7 w-7" />
               </a>
             )}
           </div>
